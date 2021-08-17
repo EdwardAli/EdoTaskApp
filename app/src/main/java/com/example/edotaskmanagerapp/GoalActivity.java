@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 public class GoalActivity extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class GoalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goal);
 
-        goalView=findViewById(R.id.goalRecyler_view);
+        goalView=findViewById(R.id.goalrecyler_view);
         goalAdapter=new GoalAdapter();
         goalView.setAdapter(goalAdapter);
         addGoalbtn =findViewById(R.id.floating_add);
