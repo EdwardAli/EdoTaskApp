@@ -11,7 +11,7 @@ import android.widget.ImageView;
 public class GoalActivity extends AppCompatActivity {
     RecyclerView goalView;
     GoalAdapter goalAdapter;
-    ImageView addGoalbtn,backImage;
+    public ImageView addGoalbtn,backImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

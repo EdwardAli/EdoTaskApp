@@ -10,12 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskManager.NoActionBar"
         android:allowBackup="true">
+        <activity android:name=".AddActivity"/>
+        <activity android:name=".GoalActivity"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <activity  android:name="com.edotaskmanagerapp.YourStoppedActivity"
-                    tools:ignore="MissingClass,WrongManifestParent" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

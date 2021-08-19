@@ -16,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         goalCard=findViewById(R.id.Card1);
 
-        goalCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,GoalActivity.class);
-                startActivity(intent);
-            }
+        goalCard.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),GoalActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
