@@ -23,13 +23,13 @@ public class GoalActivity extends AppCompatActivity {
         addGoalbtn =findViewById(R.id.floating_add);
         backImage=findViewById(R.id.backImage);
 
-        addGoalbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(GoalActivity.this,AddActivity.class);
-                startActivity(intent);
-            }
-        });
+//        addGoalbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(GoalActivity.this,AddActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
        backImage.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -38,5 +38,9 @@ public class GoalActivity extends AppCompatActivity {
                startActivity(intent);
            }
        });
+    }
+
+    public void floatAdd(View view) {
+        startActivity( new Intent(GoalActivity.this, AddActivity.class));
     }
 }

@@ -54,7 +54,8 @@
            android:id="@+id/floating_add"
            android:layout_height="40sp"
            android:src="@drawable/ic_add_24"
-           android:layout_margin="7sp"/>
+           android:layout_margin="7sp"
+            android:onClick="floatAdd"/>
 
     </LinearLayout>
 
